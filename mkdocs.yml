@@ -1,7 +1,6 @@
 site_name: Visual Quiz Builder
 site_url: https://af1a1.github.io/
 site_author: Aflal Ahamed
-docs_dir: docs
 
 theme:
   name: material
@@ -27,7 +26,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:pymdownx.emoji.twemoji
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
-      
+
 plugins:
   - search # necessary for search to work
   # - git-revision-date-localized
