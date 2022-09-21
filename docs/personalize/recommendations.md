@@ -99,35 +99,6 @@ The code should look something like this:
 
 9. At the end we would need some styling for the page, we have that covered through some basic styling you can edit yourself, copy the following block at the end of the page:
 
-```css
-{% style %}
-  #products {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  .product {
-    width: 24%;
-	  margin: 1%;
-    display: flex;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .product a {
-    text-decoration: none;
-  }
-
-  .product .info {
-    text-align: center;
-  }
-{% endstyle %}
-```
 
 10. Now it's time to create the page, in Shopify Dashboard sidebar, press on **Pages**
 ![](../images/recommendations/step-10.png)
