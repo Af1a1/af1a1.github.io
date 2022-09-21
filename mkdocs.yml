@@ -1,0 +1,66 @@
+site_name: Visual Quiz Builder
+site_url: https://af1a1.github.io/askwhai-docs/
+# site_url: https://thomassuedbroecker.github.io/How-to-install-MkDocs-on-Mac-and-setup-integration-with-GitHub
+site_author: Aflal Ahamed
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - instant
+    - tabs
+  palette:
+    primary: white
+    accent: black
+  font:
+    text: Arimo
+    code: Fira Code
+  logo: logo.png
+  favicon: favicon.ico
+
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search # necessary for search to work
+  # - git-revision-date-localized
+  # - mkdocs-git-committers-plugin
+  # - mkdocs-git-revision-date-localized
+
+extra_css:
+  - stylesheets/extra.css

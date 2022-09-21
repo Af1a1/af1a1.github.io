@@ -1,0 +1,7 @@
+# ignore temporary files
+.DS_Store
+node_modules/
+site/
+env/site/
+site/
+site/
