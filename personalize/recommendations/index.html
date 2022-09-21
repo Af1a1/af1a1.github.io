@@ -1,0 +1,700 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Aflal Ahamed">
+      
+      
+        <link rel="canonical" href="https://af1a1.github.io/personalize/recommendations/">
+      
+      <link rel="icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
+    
+    
+      
+        <title>Setting up Custom Recommendations page with Shopify - Visual Quiz Builder</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a952b86.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arimo";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#setting-up-custom-recommendations-page-with-shopify" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Visual Quiz Builder" class="md-header__button md-logo" aria-label="Visual Quiz Builder" data-md-component="logo">
+      
+  <img src="../../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Visual Quiz Builder
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Setting up Custom Recommendations page with Shopify
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Visual Quiz Builder" class="md-nav__button md-logo" aria-label="Visual Quiz Builder" data-md-component="logo">
+      
+  <img src="../../logo.png" alt="logo">
+
+    </a>
+    Visual Quiz Builder
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome to Visual Quiz Builder
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Installation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/1.getting_started/" class="md-nav__link">
+        Add Visual Quiz Builder to Your Shopify Store
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/2.first_quiz/" class="md-nav__link">
+        Your First Quiz
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Personalize
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Personalize" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Personalize
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom_recommendations/" class="md-nav__link">
+        Setting up Custom Recommendations page with Shopify
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../klaviyo/" class="md-nav__link">
+        Setting up Klaviyo Events and Emails
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Setting up Custom Recommendations page with Shopify
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Setting up Custom Recommendations page with Shopify
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-shopify-page-template" class="md-nav__link">
+    Creating Shopify Page Template
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sync-the-recommendations-page-with-your-quiz" class="md-nav__link">
+    Sync the recommendations page with your quiz
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-user-provided-name-in-the-page-optional" class="md-nav__link">
+    Use user provided name in the page (Optional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-user-provided-email-in-the-page-optional" class="md-nav__link">
+    Use user provided email in the page (Optional)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-shopify-page-template" class="md-nav__link">
+    Creating Shopify Page Template
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sync-the-recommendations-page-with-your-quiz" class="md-nav__link">
+    Sync the recommendations page with your quiz
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-user-provided-name-in-the-page-optional" class="md-nav__link">
+    Use user provided name in the page (Optional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-user-provided-email-in-the-page-optional" class="md-nav__link">
+    Use user provided email in the page (Optional)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="setting-up-custom-recommendations-page-with-shopify">Setting up Custom Recommendations page with Shopify<a class="headerlink" href="#setting-up-custom-recommendations-page-with-shopify" title="Permanent link">&para;</a></h1>
+<p>The process starts with creating a page template in Shopify Theme editor then creating a page with that template.</p>
+<p>The template code would have a javascript code that's responsible for processing the data from the quiz, that data includes recommended products and would contain user information (Email, Name) if available.</p>
+<h2 id="creating-shopify-page-template">Creating Shopify Page Template<a class="headerlink" href="#creating-shopify-page-template" title="Permanent link">&para;</a></h2>
+<p>To access the editor page you need to follow these steps:</p>
+<ol>
+<li>
+<p>Access your store dashboard</p>
+</li>
+<li>
+<p>From the dashboard sidebar click on <strong>Online Store</strong>
+<img alt="" src="../../images/recommendations/step-2.png" /></p>
+</li>
+<li>
+<p>In live theme section press on Actions &gt; Edit Code
+<img alt="" src="../../images/recommendations/step-3.png" /></p>
+</li>
+<li>
+<p>From the Editor sidebar and under <strong>Templates</strong> section, press on <strong>Add a new template</strong>
+<img alt="" src="../../images/recommendations/step-4.png" /></p>
+</li>
+<li>
+<p>From the creation modal chose the template type as <strong>Page</strong> and enter any name you like for the template and press on <strong>Create Template</strong>
+<img alt="" src="../../images/recommendations/step-5.png" /></p>
+</li>
+<li>
+<p>The liquid code like any html code is consisted of three parts: (HTML, CSS, JS), we're gonna add them one by one</p>
+</li>
+<li>
+<p>Add the parent element that will contain the products, the most easy way is by looking in the page for a line that reads <code>{{ page.content }}</code> and paste this block of code beneath it:</p>
+</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;products&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<p>The code should look something like this:
+<img alt="" src="../../images/recommendations/step-7.png" /></p>
+<ol>
+<li>Now we would need to add the javascript code for fetching the products, at the end of the page copy and paste the following block of code:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Parsing the url paramaters and data and store them in global variable &quot;params&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">search</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mf">1</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&amp;&#39;</span><span class="p">).</span><span class="nx">reduce</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">q</span><span class="p">,</span><span class="w"> </span><span class="nx">query</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">chunks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">query</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">chunks</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">chunks</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="nx">q</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">q</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="p">{})</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// Storing product recommendations in another global variable</span><span class="w"></span>
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">product_handles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">params</span><span class="p">[</span><span class="s1">&#39;products&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// Calling Shopify api to retrieve the products data</span><span class="w"></span>
+<span class="w">  </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">product_handles</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">product</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">reject</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;/products/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">product</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;.json&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">        </span><span class="c1">// Making sure that the product actually exists</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="mf">404</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span><span class="p">.</span><span class="nx">json</span><span class="p">()</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">product</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">})</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">        </span><span class="nx">resolve</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">product</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">})</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">reject</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">})</span><span class="w"></span>
+<span class="w">  </span><span class="p">}))</span><span class="w"></span>
+<span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">products</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Filtering out the products list if it had any removed products</span><span class="w"></span>
+<span class="w">    </span><span class="nx">products</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">products</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">product</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="o">!!</span><span class="nx">product</span><span class="w"> </span><span class="p">})</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// The product grid template    </span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">product_template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">product</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">&lt;div class=&quot;product&quot; itemprop=&quot;itemListElement&quot; itemscope</span>
+<span class="sb">    itemtype=&quot;http://schema.org/Product&quot;&gt;</span>
+<span class="sb">    &lt;a href=&quot;/products/</span><span class="si">${</span><span class="nx">product</span><span class="p">.</span><span class="nx">handle</span><span class="si">}</span><span class="sb">&quot; itemprop=&quot;url&quot;&gt;</span>
+<span class="sb">        </span><span class="si">${</span><span class="nx">product</span><span class="p">.</span><span class="nx">images</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">        &lt;div class=&quot;product_image&quot;&gt;</span>
+<span class="sb">            &lt;img src=&quot;</span><span class="si">${</span><span class="nx">product</span><span class="p">.</span><span class="nx">images</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">src</span><span class="si">}</span><span class="sb">&quot; alt=&quot;</span><span class="si">${</span><span class="nx">product</span><span class="p">.</span><span class="nx">title</span><span class="si">}</span><span class="sb">&quot; /&gt;</span>
+<span class="sb">        &lt;/div&gt;`</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="si">}</span><span class="sb"></span>
+<span class="sb">        &lt;div class=&quot;info&quot;&gt;</span>
+<span class="sb">            &lt;span class=&quot;title&quot; itemprop=&quot;name&quot;&gt;</span><span class="si">${</span><span class="nx">product</span><span class="p">.</span><span class="nx">title</span><span class="si">}</span><span class="sb">&lt;/span&gt;</span>
+<span class="sb">            &lt;span class=&quot;price&quot; itemprop=&quot;offers&quot; itemscope itemtype=&quot;http://schema.org/Offer&quot;&gt;</span>
+<span class="sb">                &lt;meta itemprop=&quot;price&quot; content=&quot;</span><span class="si">${</span><span class="nx">product</span><span class="p">.</span><span class="nx">variants</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">price</span><span class="si">}</span><span class="sb">&quot; /&gt;</span>
+<span class="sb">                &lt;meta itemprop=&quot;priceCurrency&quot; content=&quot;USD&quot; /&gt;</span>
+<span class="sb">                &lt;link itemprop=&quot;availability&quot; href=&quot;http://schema.org/InStock&quot;&gt;</span>
+<span class="sb">                &lt;span class=&quot;money&quot;&gt;$</span><span class="si">${</span><span class="nx">product</span><span class="p">.</span><span class="nx">variants</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">price</span><span class="si">}</span><span class="sb">&lt;/span&gt;</span>
+<span class="sb">            &lt;/span&gt;</span>
+<span class="sb">        &lt;/div&gt;</span>
+<span class="sb">    &lt;/a&gt;</span>
+<span class="sb">&lt;/div&gt;`</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Fill the resulted products grid in the #products element</span><span class="w"></span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;products&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">products</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">product_template</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">})</span><span class="w"></span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span><span class="w"></span>
+</code></pre></div>
+
+<ol>
+<li>
+<p>At the end we would need some styling for the page, we have that covered through some basic styling you can edit yourself, copy the following block at the end of the page:</p>
+</li>
+<li>
+<p>Now it's time to create the page, in Shopify Dashboard sidebar, press on <strong>Pages</strong>
+<img alt="" src="../../images/recommendations/step-10.png" /></p>
+</li>
+<li>
+<p>In pages press on <strong>Add Page</strong>
+<img alt="" src="../../images/recommendations/step-11.png" /></p>
+</li>
+<li>
+<p>Enter your desired page name and you don't have to fill any content</p>
+</li>
+<li>
+<p>On the right in <strong>Online Store</strong> section you would fine the template select bar, select the recommendations template
+<img alt="" src="../../images/recommendations/step-13.png" /></p>
+</li>
+<li>
+<p>Save your page and copy its url</p>
+</li>
+</ol>
+<h2 id="sync-the-recommendations-page-with-your-quiz">Sync the recommendations page with your quiz<a class="headerlink" href="#sync-the-recommendations-page-with-your-quiz" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>In Visual Quiz Builder app, open your quiz
+<img alt="" src="../../images/recommendations/step-15.png" /></p>
+</li>
+<li>
+<p>In the dashboard, scroll down until you find <strong>Result page</strong> section and press on it
+<img alt="" src="../../images/recommendations/step-16.png" /></p>
+</li>
+<li>
+<p>In the right sidebar find <strong>Custom Recommendations URL</strong> field and paste your page url in it
+<img alt="" src="../../images/recommendations/step-17.png" /></p>
+</li>
+<li>
+<p>Make sure you have tagged options in order for the recommendations page to work and save your quiz by pressing on <strong>Save &amp; Publish</strong>
+<img alt="" src="../../images/recommendations/step-18.png" /></p>
+</li>
+</ol>
+<h2 id="use-user-provided-name-in-the-page-optional">Use user provided name in the page (Optional)<a class="headerlink" href="#use-user-provided-name-in-the-page-optional" title="Permanent link">&para;</a></h2>
+<p>If you are asking the user about their information like name or email then these data will be passed along sind recommendations to the recommendations page</p>
+<p>If you would like to use any of the user info you have to follow these steps:</p>
+<ol>
+<li>Add the following block of code in any desired area in your where you want to use the user name.</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hi <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;user-name&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>, Here are your recommendations.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<ol>
+<li>Add the following block of code to the already existing javascript code.</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;user-name&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">params</span><span class="p">[</span><span class="s2">&quot;user_name&quot;</span><span class="p">]</span><span class="w"></span>
+</code></pre></div>
+
+<h2 id="use-user-provided-email-in-the-page-optional">Use user provided email in the page (Optional)<a class="headerlink" href="#use-user-provided-email-in-the-page-optional" title="Permanent link">&para;</a></h2>
+<p>Just like we're doing in the user name we can do the same thing with email, in different usually you would need to send the email in the third-party tool of your choosing.</p>
+<p>You can access the email simply by using the following line:</p>
+<div class="codehilite"><pre><span></span><code><span class="nx">params</span><span class="p">[</span><span class="s2">&quot;user_email&quot;</span><span class="p">]</span><span class="w"></span>
+</code></pre></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../klaviyo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setting up Klaviyo Events and Emails" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Setting up Klaviyo Events and Emails
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["instant", "tabs"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.37e9125f.min.js"></script>
+      
+    
+  </body>
+</html>
