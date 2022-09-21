@@ -1,6 +1,5 @@
 site_name: Visual Quiz Builder
-site_url: https://af1a1.github.io/askwhai-docs/
-# site_url: https://thomassuedbroecker.github.io/How-to-install-MkDocs-on-Mac-and-setup-integration-with-GitHub
+site_url: https://af1a1.github.io/
 site_author: Aflal Ahamed
 docs_dir: docs
 
