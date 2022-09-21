@@ -98,7 +98,7 @@ The code should look something like this:
 ```
 
 9. At the end we would need some styling for the page, we have that covered through some basic styling you can edit yourself, copy the following block at the end of the page:
-
+<!-- 
 ```css
 {% style %}
   #products {
@@ -127,7 +127,7 @@ The code should look something like this:
     text-align: center;
   }
 {% endstyle %}
-```
+``` -->
 
 10. Now it's time to create the page, in Shopify Dashboard sidebar, press on **Pages**
 ![](../images/recommendations/step-10.png)
