@@ -381,35 +381,36 @@
                 
                 
                 <h1 id="add-visual-quiz-builder-to-your-shopify-store">Add Visual Quiz Builder to Your Shopify Store<a class="headerlink" href="#add-visual-quiz-builder-to-your-shopify-store" title="Permanent link">&para;</a></h1>
-<p>Our installation process is very straight forwawrd</p>
 <h2 id="fullscreen">Fullscreen<a class="headerlink" href="#fullscreen" title="Permanent link">&para;</a></h2>
-<p>The process starts with enabling fullscreen in Shopify Theme editor then selecting a rendering method from dropdown list.<br>
+<p>The process starts with enabling fullscreen. This will enable global import for our scripts globally for all pages. To enabling fullscreen you need to follow these steps: <br>
+1. Access your store dashboard <br>
+2. From the dashboard sidebar click on <strong>Online Store</strong>
+<img alt="" src="../../images/recommendations/step-2.png" /> <br>
+3. In live theme section press on <strong>Customize</strong> <br>
+<img alt="" src="../../images/recommendations/step-3.png" /> <br>
+4. From the Editor sidebar click on <strong>App embeds</strong> <br>
+<img alt="full-screen" src="../../images/installation/App%20embeds.png" /> <br>
+5. Then enable the toggle button on the Shopify Theme editor then selecting a <strong>Rendering Method</strong> from dropdown list. <br>
 <img alt="full-screen" src="../../images/installation/Enable%20full%20screen.png" /><br>
-1. In Visual Quiz Builder app, open your quiz and click on publish button.<br>
-2. Copy the hash to your quiz from a button on your site or your navigation menu. (Example: https://yourstoreid.myshopify.com/#finder-quiz-7068)
-<img alt="" src="../../images/installation/finder-quiz-hash-link.png" /></p>
+6. In Visual Quiz Builder app, open your quiz and click on <strong>Publish</strong> button.<br>
+<img alt="" src="../../images/installation/Publish%20button.png" /><br>
+7. Copy the hash to your quiz from a button on your site or your navigation menu. (Example: https://yourstoreid.myshopify.com/#finder-quiz-7068)
+<img alt="" src="../../images/installation/finder-quiz-hash-link.png" /> <br></p>
 <h2 id="embed">Embed<a class="headerlink" href="#embed" title="Permanent link">&para;</a></h2>
-<p>Use the quiz id for the app section if you're using Shopify 2.0<br>
+<p>A. Use the quiz id for the app section if you're using Shopify 2.0<br>
 <img alt="full-screen" src="../../images/installation/Embed%20quiz%20id.png" /><br>
-Use this code snippet to embed the quiz using shadow-dom on any page of your Shopify store.</p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">askwhai</span><span class="o">-</span><span class="nx">quiz</span><span class="w"> </span><span class="nx">mode</span><span class="o">=</span><span class="s2">&quot;embed&quot;</span><span class="w"> </span><span class="nx">quiz</span><span class="o">=</span><span class="s2">&quot;7068&quot;</span><span class="o">&gt;&lt;</span><span class="err">/askwhai-quiz&gt;</span><span class="w"></span>
-</code></pre></div>
-
-<p>Use this code snippet to embed the quiz using direct rendering on any page of your Shopify store.</p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">askwhai</span><span class="o">-</span><span class="nx">quiz</span><span class="o">-</span><span class="nx">root</span><span class="w"> </span><span class="nx">mode</span><span class="o">=</span><span class="s2">&quot;embed&quot;</span><span class="w"> </span><span class="nx">quiz</span><span class="o">=</span><span class="s2">&quot;7068&quot;</span><span class="o">&gt;&lt;</span><span class="err">/askwhai-quiz-root&gt;</span><span class="w"></span>
-</code></pre></div>
-
-<p>Use this code snippet to embed the quiz using iframe on any page of your Shopify store.</p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">iframe</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;whai-embed&quot;</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://quiz.askwhai.com/?env=production&amp;embed=true&amp;quiz=7068&amp;store=aflalexperiment.myshopify.com&quot;</span><span class="w"> </span><span class="nx">height</span><span class="o">=</span><span class="s2">&quot;600px&quot;</span><span class="w"> </span><span class="nx">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="w"> </span><span class="nx">style</span><span class="o">=</span><span class="s2">&quot;outline: 0;border: none;&quot;</span><span class="o">&gt;&lt;</span><span class="err">/iframe&gt;</span><span class="w"></span>
-</code></pre></div>
-
-<p>Use this code snippet to embed the quiz outside Shopify.</p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">iframe</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://quiz.askwhai.com/?env=production&amp;quiz=7068&amp;store=aflalexperiment.myshopify.com&quot;</span><span class="w"> </span><span class="nx">height</span><span class="o">=</span><span class="s2">&quot;600px&quot;</span><span class="w"> </span><span class="nx">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="w"> </span><span class="nx">style</span><span class="o">=</span><span class="s2">&quot;outline: 0;border: none;&quot;</span><span class="o">&gt;&lt;</span><span class="err">/iframe&gt;</span><span class="w"></span>
-</code></pre></div>
-
+B. To embed the quiz using shadow-dom on any page of your Shopify store or embed the quiz using direct rendering on any page of your Shopify store. (Note: Full screen must be enabled when not using direct embeding) <br>
+1. In Visual Quiz Builder app, open your quiz <br>
+2. In the dashboard, click on publish button.<br>
+<img alt="" src="../../images/installation/Publish%20button.png" /><br>
+3. Select embed.
+<img alt="full-screen" src="../../images/installation/select-embed.png" /><br>
+4. Copy the code snippets from publish model. <br>
+<img alt="" src="../../images/installation/embed-1.png" /><br>
+<img alt="" src="../../images/installation/embed-2.png" /><br></p>
 <h2 id="popup">Popup<a class="headerlink" href="#popup" title="Permanent link">&para;</a></h2>
-<p>From publish quiz model, <br>
-1. Select the page you want add the popup quiz from dropdown menue. <br>
+<p>To enable popup quiz on Shopify store, you need to follow these steps: <br>
+1. From publish quiz model, Select the page you want add the popup quiz from dropdown menue. <br>
 2. Then select the frequncy from dropdown menu. <br>
 3. After setting your popup settings save your changes by clicking save changes button. <br>
 <img alt="full-screen" src="../../images/installation/Popup%20quiz.png" /><br>
@@ -423,7 +424,7 @@ This popup quiz will be displayed on your store page.
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 19, 2022</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2022</span>
     
   </small>
 </div>
